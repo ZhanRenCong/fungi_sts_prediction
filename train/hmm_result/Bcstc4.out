@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/Bcstc4.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-16   46.3   0.2      1e-15   43.4   0.1    2.0  1  Bcstc4   
+
+
+Domain annotation for each sequence (and alignments):
+>> Bcstc4  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   0.1     1e-15     1e-15      23     216 ..     171     363 ..     157     385 .. 0.71
+
+  Alignments for each domain:
+  == domain 1    score: 43.4 bits;  conditional E-value: 1e-15
+     C20  23 radfsllaslyyPdakkdrlrtacdllnvlFllDdlldeg....seeetealadevldalrdpllprperekavgevlrqlwe..rlratasplaqrRfieel 119
+             + ++ l +s +yP+a++ r r+++  + +lF+ Dd ++e     s       +++ ld +++   + ++ ++ +    r l    +++a + + +     +  
+  Bcstc4 171 EHRVVLATSYMYPNANERRARIIAATMMLLFIYDDKMEETpeglS---FTNSREQFLDYFKKENDV-MASDSTTSDFQRHLKStmSAIADEDEISG----NGG 265
+             56677889******************************9974443...444445555555555544.23333333333333330033444444455....344 PP
+
+     C20 120 eeyfksvvqQad.dRaedsirdlesYlelRrddvGvkpsialleyaadmeLpdev.lehpsikelekecadlvvlvNDilSYnkEqer...gdlhnivlllm 216
+             +e+++++      +  +   ++le+Yl +Rr +vG++  ia ++++    ++ +v ++ p   +  ++  d++ ++ND  SY+kE ++   g+  n+v ++ 
+  Bcstc4 266 KEMIEAMIGGFRcVHPNGEFQSLEEYLSFRRLNVGAQYVIAAAKFT----IKSSVdVDDPRFARYLRLIGDHLGIINDMASYEKECRArkeGRHQNMVNIVA 363
+             5555555544331456899**************************9....77777347899************************98622255778888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (441 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11.71
+//

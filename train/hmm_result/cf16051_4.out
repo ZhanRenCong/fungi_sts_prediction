@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/cf16051_4.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    7.4e-63  197.8   0.0      1e-62  197.3   0.0    1.1  1  cf16051_4 
+
+
+Domain annotation for each sequence (and alignments):
+>> cf16051_4  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  197.3   0.0     1e-62     1e-62      28     235 ..      89     302 ..      81     306 .. 0.93
+
+  Alignments for each domain:
+  == domain 1    score: 197.3 bits;  conditional E-value: 1e-62
+        C20  28 llaslyyPdakk.......drlrtacdllnvlFllDdlldegseeetealadevldalrdpllprperekavgevlrqlwerlratasplaqrRfieele 120
+                lla+++y+++ +       +  rt+cdl++++F++D+ +d +s ee+  +a++ +da+  p +prp +e+++ge +rq++ r+ + a++  ++Rf+++  
+  cf16051_4  89 LLAAMCYARMPRgtykvspEFVRTGCDLMHLFFMFDEHSDRASPEEVWEQAAIQVDAIYSPSKPRPRGEWVGGEFTRQFFLRIPQSATETFKQRFRDTWV 188
+                78888888765422222225689***************************************************************************** PP
+
+        C20 121 eyfksvvqQaddRaedsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikelekecadlvvlvNDilSYnkEqergd.lhnivlllmnee 219
+                +y+ksv qQa++R++++i dlesY+ lRr+++G+   ial e++  m++p e+++hp i ele++++dl+v+ NDilSY kEq++gd  hni++++mn+ 
+  cf16051_4 189 DYVKSVAQQAEHRSHSRILDLESYFPLRRNTSGAPSTIALYEMY--MDIPGEIRRHPLILELEELAVDLIVIANDILSYYKEQAVGDdEHNIITVIMNQF 286
+                ********************************************..****************************************************** PP
+
+        C20 220 klslqeAidkiedlir 235
+                +l  q+Aidk ++l  
+  cf16051_4 287 GLGRQQAIDKAGELSA 302
+                *********9988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (406 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12.13
+//

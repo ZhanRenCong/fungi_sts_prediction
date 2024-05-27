@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./test/sequence/ce16014_g3304_new.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+    1.4e-23   69.2   0.0    2.2e-23   68.5   0.0    1.2  1  ce16014_g3304_new 
+
+
+Domain annotation for each sequence (and alignments):
+>> ce16014_g3304_new  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.5   0.0   2.2e-23   2.2e-23      47     231 ..     110     309 ..     103     316 .. 0.85
+
+  Alignments for each domain:
+  == domain 1    score: 68.5 bits;  conditional E-value: 2.2e-23
+                C20  47 dllnvlFllDdlldeg.......seeetealadevldalrdpllp..rperekavgev...lrqlwerlratasplaqrRfieeleeyfksv 126
+                         ++ +lF +Dd +de        ++  +   +d ++ al++ l+   ++  +   g+v   l+ + ++l++  + +  + f++++ +y+   
+  ce16014_g3304_new 110 LYIIWLFCWDDAIDEQgtgdlsnDLLRAATHRDNTISALEHVLGLgpNFGSDTEFGQVdheLKVVGDELKKAYTREQRQVFMNQMRRYIGNC 201
+                        5889***********99998877777777888999999999876455444444444441125556789999999888899************ PP
+
+                C20 127 vqQaddRaedsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikelekecadlvvlvNDilSYnkEqer..gd.lhnivlll 215
+                         + ++ R + +++++esY elR  +  v  ++al+e+    ++p++++  ++i+++  e++  + + NDilS++kE  +  ++   n v ++
+  ce16014_g3304_new 202 HEEQAMRLQGTLPGIESYSELRHGTAAVWTLCALVEFGLSDNIPEHIRYMEQIQTIWSETSRAIWITNDILSLRKEIPKegSEsVVNAVPII 293
+                        ****************************************************************************8551145677999*** PP
+
+                C20 216 mneeklslqeAidkie 231
+                        m++e+   q+A+d++ 
+  ce16014_g3304_new 294 MKHEGKCPQQAVDALL 309
+                        ***********99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (378 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15.06
+//

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./test/sequence/gm14063_g12718_new.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    5.8e-20   57.4   0.0      9e-20   56.7   0.0    1.2  1  gm14063_g12718_new 
+
+
+Domain annotation for each sequence (and alignments):
+>> gm14063_g12718_new  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.7   0.0     9e-20     9e-20      12     234 ..      35     264 ..      28     269 .. 0.83
+
+  Alignments for each domain:
+  == domain 1    score: 56.7 bits;  conditional E-value: 9e-20
+                 C20  12 afekkaqkafaradfsllaslyyPdakkdrlrtacdllnvlFllDdlldeg......seeetealadevldalrdpllp..rperekavge 94 
+                          +e k +++ ++a+ +ll++   P+a+ ++l+t++  + +   lDd +++         ++ + + +e + +l + +    +p+++ a+  
+  gm14063_g12718_new  35 SAEAKDRANVEEANPALLTACFWPEASLEKLKTLAVMVIWQGRLDDAIETLeyenseRARDLRTQTKEYVAQLLQLVDAsrEPATSAAL-- 123
+                         56789999******************************************977766644455555555555555555442223333333.. PP
+
+                 C20  95 vlrqlwerlratasplaqrRfieeleeyfksvvqQaddRaedsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikeleke 185
+                          ++++ + + ++      r ++ +l +y++s  + +   ++  ++   +Y elRr++ G  p++a++e+a d +L   v      k ++++
+  gm14063_g12718_new 124 GFQPVAQVVCKHYDGDQRRALKVSLFDYIDSTAAETRYIQSGEVPTDRYYQELRRRTAGSGPLCAMAEFASDTQLSPLVTGSMPYKLIVNA 214
+                         367777777777766666668999*********************************************************999******* PP
+
+                 C20 186 cadlvvlvNDilSYnkEqergdlhnivlll.mneeklslqeAidkiedli 234
+                          + +v l ND+lS+ kE+++ ++  iv +l  n +   l+eA++++   i
+  gm14063_g12718_new 215 VSVIVGLTNDLLSLGKELRKNRTFSIVPVLlWNGDRGGLKEAVEYVVGEI 264
+                         **********************9999976515677778899988876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (331 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 15.82
+//

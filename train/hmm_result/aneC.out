@@ -1,0 +1,50 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/aneC.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.3e-11   30.0   0.2    1.2e-10   26.8   0.2    2.0  1  aneC     
+
+
+Domain annotation for each sequence (and alignments):
+>> aneC  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   0.2   1.2e-10   1.2e-10      31     215 ..     170     353 ..     146     368 .. 0.73
+
+  Alignments for each domain:
+  == domain 1    score: 26.8 bits;  conditional E-value: 1.2e-10
+   C20  31 sly.yPdakkdrlrtacdllnvlFllDdlldegseeetealadev.ldalrdpllprperekavgevlrqlwerlratasplaqrRfieeleeyfksvvq.Qadd 132
+           ++y y+  + +r+r++ + + +lFl Dd+++   ++e+++  +    d +++       + +  + ++ ++ ++++a +  l      e ++++++  +   ++ 
+  aneC 170 CIYlYAVSDAARIRVLTKSIVFLFLHDDVMESKANAEGNSILEGWdTDTFKANE----LEGESRNDIFLDFCREAIALDPVLGL----ELMQDTVRWARYsRVNS 266
+           5544899999*********************99877776654433133333333....34455567888888888887765555....77777776655313333 PP
+
+   C20 133 .RaedsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikelekecadlvvlvNDilSYnkEqer....gd.lhnivlll 215
+            +a+++    +++ ++R+ d+     i+ +++    ++   ++e p+ + +ek+ + + + +ND++SY+kE++     g+ lhn v ++
+  aneC 267 tKADKTHATWQDFRDFRELDIAYDFMITAVRFG--AAILYDPAERPVFEWIEKLYIRHCLYINDLYSYEKEFREhqqeGApLHNSVHMI 353
+           134555556666779******************..999*********************************875111155566666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (442 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 11.74
+//

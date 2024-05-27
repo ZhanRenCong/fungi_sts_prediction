@@ -1,0 +1,52 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/LsBERS.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.9e-16   43.7   0.0    1.8e-09   23.0   0.0    2.2  2  LsBERS   
+
+
+Domain annotation for each sequence (and alignments):
+>> LsBERS  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.0   4.2e-08   4.2e-08      23      62 ..     169     208 ..     155     244 .. 0.83
+   2 !   23.0   0.0   1.8e-09   1.8e-09     136     215 ..     281     360 ..     270     373 .. 0.83
+
+  Alignments for each domain:
+  == domain 1    score: 18.5 bits;  conditional E-value: 4.2e-08
+     C20  23 radfsllaslyyPdakkdrlrtacdllnvlFllDdlldeg 62 
+             + ++   +s ++P a++ rlr ++ l+ + F++Dd ++e 
+  LsBERS 169 EHRMVVATSYMFPFADERRLRQIATLMIMYFVFDDKVEET 208
+             55666679****************************9986 PP
+
+  == domain 2    score: 23.0 bits;  conditional E-value: 1.8e-09
+     C20 136 dsirdlesYlelRrddvGvkpsialleyaadmeLpdev.lehpsikelekecadlvvlvNDilSYnkEqer...gdlhnivlll 215
+              + ++le+Yl++Rr +vG+   ia ++++    ++ +v ++ p   +   +  d+  ++ND  SY+kE ++   g++ +++ ++
+  LsBERS 281 GDFHSLEDYLKFRRLNVGARFVIAAAKFS----IKSSVdVKDPRFARYLSLVGDHYGIINDMASYDKESKAlreGETQDMINIV 360
+             57899************************....67766336699999999******************7642226666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (444 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 21.22
+//

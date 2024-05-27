@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/ps15097_1.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    4.1e-54  169.1   0.0    5.3e-54  168.8   0.0    1.1  1  ps15097_1 
+
+
+Domain annotation for each sequence (and alignments):
+>> ps15097_1  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.8   0.0   5.3e-54   5.3e-54       2     236 ..      55     290 ..      54     293 .. 0.98
+
+  Alignments for each domain:
+  == domain 1    score: 168.8 bits;  conditional E-value: 5.3e-54
+        C20   2 evdewllevaafekkaqkafaradfsllaslyyPdakkdrlrtacdllnvlFllDdlldegseeetealadevldalrdpllprperekavgevlrqlwe 101
+                e+++wl + ++f+kk q+af+  df  la++ y   + + +r +cd  nv+F++D+++d+     +   ++  +da+  p  prp+re ++ge +rq+w+
+  ps15097_1  55 ESNAWLFSLHPFSKKGQEAFEGWDFPYLAAVSYYGGSYSTFRSICDITNVFFVIDEQTDDEPVDVVTERCEMAMDAILRPEEPRPARECVIGEATRQCWQ 154
+                7899************************************************************************************************ PP
+
+        C20 102 rlratasplaqrRfieeleeyfksvvqQaddRaedsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikelekecadlvvlvNDilSYnk 201
+                r+      +  +Rf ++  +y++sv  Qa++R++++i  +e+Yl  R d++G  ps+a+ e    +e+p+e +ehp ++ + ++c++lv+l ND++SY+k
+  ps15097_1 155 RTYPDLPLVIIERFQRTWRKYLDSVIVQAENRSRKHILHPEDYLRERVDNIGIWPSVAIGEQCLRLEIPHECMEHPYLEDMRTWCSELVTLQNDLFSYRK 254
+                **************************************************************************************************** PP
+
+        C20 202 Eqergd.lhnivlllmneeklslqeAidkiedlire 236
+                E  + d + n ++ +m + +l+l  A++++++ ++ 
+  ps15097_1 255 ERLANDcDYNAITCVMYHLGLDLHGAVRWVSERHEA 290
+                ******************************998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (361 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9.59
+//

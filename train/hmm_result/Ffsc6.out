@@ -1,0 +1,52 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./training_data/fungi_Terpene_synth_C.hmm
+# target sequence database:        ./train/sequence/Ffsc6.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       C20  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.4e-17   47.0   0.3    6.2e-12   31.1   0.0    2.1  2  Ffsc6    
+
+
+Domain annotation for each sequence (and alignments):
+>> Ffsc6  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.1     1e-06     1e-06      30      78 ..     118     166 ..      99     180 .. 0.86
+   2 !   31.1   0.0   6.2e-12   6.2e-12     135     208 ..     209     280 ..     196     292 .. 0.91
+
+  Alignments for each domain:
+  == domain 1    score: 14.0 bits;  conditional E-value: 1e-06
+    C20  30 aslyyPdakkdrlrtacdllnvlFllDdlldegseeetealadevldal 78 
+            a   yP  +  r+  + + l +lF+ Dd+++ g  +++   +d  + ++
+  Ffsc6 118 AVYLYPSSSPTRIELLTQALLLLFFHDDVMERGATQDDATVCDDFVTMI 166
+            56789****************************9999999999887766 PP
+
+  == domain 2    score: 31.1 bits;  conditional E-value: 6.2e-12
+    C20 135 edsirdlesYlelRrddvGvkpsialleyaadmeLpdevlehpsikelekecadlvvlvNDilSYnkEqergdl 208
+            +d+   l +Yl++Rr+d+ +   ia +++     +++ + e     ele++ +++ +l+ND++SY+kE+   ++
+  Ffsc6 209 QDKYATLAEYLDYRRHDIAKPFMIAAIRFG--SGVRQTPEETAPFAELEDLYVQHSILINDLYSYDKEMYEART 280
+            6777899***********************..99**********************************987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                          1  (371 residues)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17.73
+//

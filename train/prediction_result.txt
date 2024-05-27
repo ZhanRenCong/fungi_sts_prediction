@@ -1,0 +1,5 @@
+The C domain of aneC STS sequence is shorter then 200 aa, which shows its huge sequence difference with characterized fungi STS sequences. This may lead to a unrelieble prediction result
+The C domain of Bcstc4 STS sequence is shorter then 200 aa, which shows its huge sequence difference with characterized fungi STS sequences. This may lead to a unrelieble prediction result
+The C domain of Ffsc6 STS sequence is shorter then 200 aa, which shows its huge sequence difference with characterized fungi STS sequences. This may lead to a unrelieble prediction result
+The C domain of LsBERS STS sequence is shorter then 200 aa, which shows its huge sequence difference with characterized fungi STS sequences. This may lead to a unrelieble prediction result
+The C domain of NsBERS STS sequence is shorter then 200 aa, which shows its huge sequence difference with characterized fungi STS sequences. This may lead to a unrelieble prediction result
